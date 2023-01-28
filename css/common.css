@@ -1,0 +1,105 @@
+@font-face {
+    src: url("fonts/MazzardH-ExtraLight.otf") format("opentype");
+    font-family: Mazzard;
+    font-weight: lighter;
+}
+
+@font-face {
+    src: url("fonts/Dongle/Dongle-Bold.ttf") format("opentype");
+    font-family: Dongle;
+    font-weight: bold;
+}
+
+@font-face {
+    src: url("fonts/Dongle/Dongle-Light.ttf") format("opentype");
+    font-family: Dongle;
+    font-weight: 200;
+}
+
+@font-face {
+    src: url("fonts/Dongle/Dongle-Regular.ttf") format("opentype");
+    font-family: Dongle;
+    font-weight: 300;
+}
+
+@font-face {
+    src: url("fonts/Nunito/Nunito-ExtraLight.ttf") format("opentype");
+    font-family: Nunito;
+    font-weight: 100;
+}
+
+@font-face {
+    src: url("fonts/Nunito/Nunito-Regular.ttf") format("opentype");
+    font-family: Nunito;
+    font-weight: 300;
+}
+
+@font-face {
+    src: url("fonts/Nunito/Nunito-Medium.ttf") format("opentype");
+    font-family: Nunito;
+    font-weight: 400;
+}
+
+@font-face {
+    src: url("fonts/Nunito/Nunito-Bold.ttf") format("opentype");
+    font-family: Nunito;
+    font-weight: bold;
+}
+
+@font-face {
+    src: url("fonts/Nunito/Nunito-Light.ttf") format("opentype");
+    font-family: Nunito;
+    font-weight: 200;
+}
+
+:root {
+    --variableBackgroundColor: #1e1e1e;
+    --variableFontColor: #ecc8a2;
+    --variableShinyColor: #ecc8a2;
+    --variableFontText: 'Nunito';
+    --variableFontTitle: 'Nunito';
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    font-family: var(--variableFontText);
+    font-size: 20px;
+    color: var(--variableFontColor);
+    line-height: 1.5;
+    font-weight: 300;
+    padding-bottom: 5vh;
+}
+
+.title-font {
+    font-family: var(--variableFontTitle);
+    font-weight: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.niceButton {
+    background-color: var(--variableShinyColor);
+    border-color: var(--variableShinyColor);
+    border-width: 1px;
+    border-radius: 3px;
+    border-style: solid;
+    color: var(--variableBackgroundColor);
+    font-family: var(--variableFontText);
+}
+
+.niceButton:hover {
+    background-color: var(--variableBackgroundColor);
+    color: var(--variableShinyColor);
+    cursor: pointer;
+}

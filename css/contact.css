@@ -1,0 +1,95 @@
+body {
+    background: var(--variableBackgroundColor);
+}
+
+input,
+textarea {
+    background-color: var(--variableBackgroundColor);
+    border-color: white;
+    border-width: 1px;
+    border-radius: 3px;
+    border-style: solid;
+    color: var(--variableFontColor);
+    font-family: var(--variableFontText), sans-serif;
+}
+
+input {
+    height: 7vh;
+}
+
+input,
+textarea {
+    width: 80%;
+}
+
+#submitButton {
+    height: 35px;
+    float: left;
+    margin-left: 10%;
+    text-align: center;
+    padding: 9px 15px;
+}
+
+form {
+    width: 100%;
+}
+
+#contactDiv {
+    padding-left: 25vw;
+    padding-right: 25vw;
+    padding-top: 25vh;
+    padding-bottom: 0vh;
+    text-align: center;
+    color: var(--variableFontColor);
+}
+
+#blockDiv {
+    height: 6vh;
+}
+
+.form_div {
+    margin-bottom: 1.5em;
+}
+
+.form_label {
+    float: left;
+    margin-left: 10%;
+}
+
+.form_input {
+    font-size: 120%;
+}
+
+.link_with_icon {
+    text-decoration: none;
+    color: inherit;
+    margin-right: 2em;
+    font-size: 0.9em;
+}
+
+#mailDiv {
+    text-align: center;
+    margin-top: 3vh;
+}
+
+@media (max-width: 1100px) {
+    #contactDiv {
+        padding-top: 10vh;
+        padding-right: 10vw;
+        padding-left: 10vw;
+    }
+
+    h1 {
+        font-size: 5em;
+        height: 70px;
+    }
+
+    #contactDiv label {
+        font-size: 150%;
+    }
+
+    .link_with_icon {
+        font-size: 1.5em;
+    }
+
+}

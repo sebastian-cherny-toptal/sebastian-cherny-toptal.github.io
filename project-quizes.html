@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sebas' Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Cormorant Garamond' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=El Messiri' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Commissioner' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/e17930e95a.js" crossorigin="anonymous"></script>
+    <link href="css/project.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <script src="js/header.js"></script>
+    <script src="js/reusable_project_page.js"></script>
+    <script src="js/custom_footer.js"></script>
+    <link href="css/custom_footer.css" rel="stylesheet">
+</head>
+
+<body>
+    <script type="text/jsx" src="index.js"></script>
+    <custom-header></custom-header>
+
+    <div>
+    </div>
+    <div id="projectDescriptionDiv">
+        <div id="logoTopDiv">
+            <img src="images/logos/quiz.png" id="logoTop" />
+        </div>
+        <div id="projectDiv">
+            <h2>Research Quizes</h2>
+            <label>
+                The scope of this project was to allow users to register, create multiple-choice quizes, publish them
+                and then see the answers given by the users.
+            </label>
+            <label></label>
+        </div>
+        <div id="overviewDiv">
+            <div id="overviewText">
+                <h3>Overview</h3>
+                <label>
+                    Users would start registering in an easy way, no validation email was asked, and then they would
+                    already start
+                    creating quizes.
+                </label>
+                <br />
+                <br />
+                <label>
+                    The backend API was thoroughly tested so as to avoid
+                    incoherent data (like single-choice questions with more than one correct answer). Tests were done
+                    with Python and
+                    run before every deployment.
+                </label>
+                <br />
+                <br />
+                <label>
+                    If a user attempted to publish a quiz with errors (questions with no correct answers,
+                    answers with empty text, etc.), they would see these questions with errors with a yellow
+                    color. A published quiz cannot be edited.
+                </label>
+                <label></label>
+            </div>
+            <div id="techStack">
+                <label class="techStackTitle">Frontend</label>
+                <br />
+                <label>React, HTML, CSS, Bootstrap</label>
+                <br />
+                <br />
+                <label class="techStackTitle">Backend</label>
+                <br />
+                <label>Python, Django, Django.test</label>
+                <br />
+                <br />
+                <label class="techStackTitle">Database</label>
+                <br />
+                <label>Postgresql</label>
+                <br />
+            </div>
+        </div>
+        <div id="lastImagesDiv">
+            <img id="imgLeft" src="images/quiz-app/img4.png" />
+            <img id="imgRight" src="images/quiz-app/img6.png" />
+        </div>
+        <br />
+    </div>
+    <div>
+    </div>
+    </custom-project>
+
+    <custom-footer></custom-footer>
+    <script>
+
+    </script>
+</body>
+
+</html>

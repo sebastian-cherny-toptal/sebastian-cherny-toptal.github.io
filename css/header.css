@@ -1,0 +1,78 @@
+#headerDiv {
+    background-color: var(--variableBackgroundColor);
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 67%;
+    z-index: 1;
+    display: block;
+    width: 100vw;
+    height: 12vh;
+    padding: 0vh 15vw 0px;
+    border: 1px none;
+    font-size: 0.625rem;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    justify-content: space-between;
+    animation: fadeIn 1s;
+}
+
+#navigationDiv {
+    background-color: var(--variableBackgroundColor);
+    display: flex;
+    width: auto;
+    height: 12vh;
+    padding-left: 0vw;
+    padding-right: 0vw;
+}
+
+#nameHeaderDiv {
+    position: relative;
+    width: 10vw;
+    min-width: 100px;
+    align-self: center;
+}
+
+#headerButtonsDiv {
+    align-self: center;
+    flex-direction: row;
+    display: flex;
+    margin-left: auto;
+}
+
+.headerButton {
+    margin-left: 3vw;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: var(--variableFontColor);
+    text-decoration: none;
+}
+
+#nameHeader {
+    color: var(--variableFontColor);
+    font-size: 30px;
+}
+
+#nameHeaderLink {
+    color: var(--variableFontColor);
+    text-decoration: none;
+    font-size: 125%;
+}
+
+@media (max-width: 1100px) {
+    .headerButton {
+        font-size: 32px;
+    }
+
+    #nameHeader {
+        font-size: 40px;
+    }
+
+    #headerDiv {
+        padding: 0vh 10vw 0px;
+    }
+}

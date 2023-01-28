@@ -1,0 +1,161 @@
+body {
+    background-color: var(--variableBackgroundColor);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#presentationText {
+    display: flex;
+    text-align: justify;
+    font-size: 1.5vw;
+    margin-top: 20px;
+}
+
+img {
+    min-width: 10em;
+    max-width: 100%;
+    display: block;
+    background: #ddd;
+    border-radius: 2%;
+}
+
+.model {
+    margin: 0;
+    position: relative;
+}
+
+
+p {
+    font-size: .9375em;
+    font-style: normal;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.5;
+    margin: 0 0 .5em 0;
+}
+
+.model-hed-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+#presentationDiv {
+    text-align: center;
+    color: var(--variableFontColor);
+    height: auto;
+    width: 100%;
+    position: relative;
+    padding-top: 25vh;
+    padding-bottom: 0vw;
+    padding-left: 30vw;
+    padding-right: 30vw;
+    flex: 1;
+}
+
+#blockDiv {
+    height: 25vh;
+    display: flex;
+}
+
+#latest-projects {
+    padding-left: 30vw;
+    padding-right: 30vw;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    font-size: 25px;
+}
+
+#presentationH1 {
+    letter-spacing: 0.03em;
+    font-size: 3vw;
+    padding-left: 5%;
+    padding-bottom: 0px;
+    margin-block-end: 0px;
+    height: 12vh;
+}
+
+.lookbook-gallery {
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.lookbook-grid {
+    display: grid;
+    column-gap: 30px;
+    row-gap: 30px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+}
+
+.link_with_icon_index {
+    text-decoration: none;
+    color: inherit;
+    margin-right: 0.5em;
+    font-size: 24px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+.link_with_icon_index img {
+    width: 100%;
+}
+
+.model {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+
+.model--caption {
+    display: none;
+}
+
+#contactMeButton {
+    height: 35px;
+    text-align: center;
+    padding: 9px 15px;
+}
+
+@media (max-width: 1100px) {
+    .lookbook-grid {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+    }
+
+    #presentationDiv {
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    #presentationText {
+        display: flex;
+        text-align: justify;
+        font-size: 4vw;
+    }
+
+    #presentationH1 {
+        letter-spacing: 0.03em;
+        font-size: 8vw;
+        padding-left: 0;
+        text-align: left;
+        height: 7vh;
+    }
+
+    #blockDiv {
+        height: 40vh;
+    }
+
+    #contactMeButton {
+        font-size: 4vw;
+    }
+
+    #latest-projects {
+        font-size: 45px;
+    }
+
+}
